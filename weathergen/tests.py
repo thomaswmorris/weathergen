@@ -1,0 +1,1 @@
+import weathergenweather = weathergen.generate(region='chajnantor',time=0)#print(weather['lpwv'])
