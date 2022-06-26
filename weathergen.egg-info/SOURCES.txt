@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+weathergen/__init__.py
+weathergen/generator.npy
+weathergen.egg-info/PKG-INFO
+weathergen.egg-info/SOURCES.txt
+weathergen.egg-info/dependency_links.txt
+weathergen.egg-info/requires.txt
+weathergen.egg-info/top_level.txt
