@@ -1,7 +1,7 @@
 ## Overview
 
 This package generates quantitatively realistic atmospheric profiles for a given time and season. In particular, it generates the water vapor mass density, 
-the air temperature, and a two-dimensional wind vector at 100m vertical increments up to 20,000m.
+the air temperature, and a two-dimensional wind vector at 100m vertical increments up to 20 km.
 
 ## Methodology
 
