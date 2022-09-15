@@ -1,1 +1,2 @@
-include weathergen/*.h5
+include weathergen/sites.csv
+include weathergen/site_data/*.h5

@@ -7,13 +7,13 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name='weathergen',
-    version='2.0.1',
+    version='2.0.2',
     description="Generates weather",
     long_description=long_description,
     author="Thomas Morris",
     author_email='thomasmorris@princeton.edu',
     url='https://github.com/thomaswmorris/weathergen',
-    python_requires='>=3.6',
+    python_requires='>=3.7',
     packages=setuptools.find_packages(exclude=['docs', 'tests']),
     include_package_data=True,
     package_data={
@@ -23,7 +23,7 @@ setuptools.setup(
             # 'path/to/data_file',
         ]
     },
-    install_requires=['numpy', 'datetime'],
+    install_requires=['numpy', 'scipy', 'pandas', 'datetime', 'h5py'],
     license="BSD (3-clause)",
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',

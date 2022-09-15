@@ -6,20 +6,18 @@ from datetime import datetime
 from scipy import interpolate
 
 base, this_filename = os.path.split(__file__)
-
 base = '/users/tom/desktop/repos/weathergen/weathergen'
+
+
 
 def log_scale_invariant_spectrum(k,a,k0,nu):
     return np.log(a*(1+np.square(k/k0))**(-nu))
 
 def get_sites(base):
-    
-    filenames = sorted(glob.glob(f'{base}/*.h5'))
-    site_df = pd.DataFrame(columns=['name', 'longitude (°)', 'latitude (°)', 'altitude (m)'])
-    for fn in filenames:
-        with h5py.File(fn, 'r') as f:
-            site_df.loc[len(site_df)] = re.findall(r'/([a-z_]+).h5', fn)[0], *[f[k][()] for k in ['lat', 'lon', 'alt']] 
-    return site_df
+
+    sites = pd.read_csv(f'{base}/sites.csv', index_col=0)
+    sites['has_data'] = [os.path.exists(f'{base}/site_data/{site}.h5') for site in sites.site]
+    return sites
 
 sites = get_sites(base)
             
@@ -33,10 +31,10 @@ def get_year_day(t):
 
 def generate(t=time.time()+np.arange(0,86400,60), site='atacama'):
     
-    if not site in sites.name.values:
+    if not site in sites.site.loc[sites.has_data].values:
         raise ValueError(f'\'{site}\' is not supported. Supported sites are:\n{sites}')
     
-    filename = f'/users/tom/desktop/repos/weathergen/weathergen/{site}.h5'
+    filename = f'/users/tom/desktop/repos/weathergen/weathergen/site_data/{site}.h5'
     gen_data = {}
     with h5py.File(filename, 'r') as f:
         for key in list(f.keys()): gen_data[key] = f[key][()]
