@@ -1,54 +1,20 @@
-from os import path
-from setuptools import setup, find_packages
-import sys
-import versioneer
+
+import setuptools
+
+with open("README.md", "r") as fh:
+    long_description = fh.read()
 
 
-# NOTE: This file must remain Python 2 compatible for the foreseeable future,
-# to ensure that we error out properly for people with outdated setuptools
-# and/or pip.
-min_version = (3, 7)
-if sys.version_info < min_version:
-    error = """
-weathergen does not support Python {0}.{1}.
-Python {2}.{3} and above is required. Check your Python version like so:
-
-python3 --version
-
-This may be due to an out-of-date pip. Make sure you have pip >= 9.0.1.
-Upgrade pip like so:
-
-pip install --upgrade pip
-""".format(*(sys.version_info[:2] + min_version))
-    sys.exit(error)
-
-here = path.abspath(path.dirname(__file__))
-
-with open(path.join(here, 'README.rst'), encoding='utf-8') as readme_file:
-    readme = readme_file.read()
-
-with open(path.join(here, 'requirements.txt')) as requirements_file:
-    # Parse requirements.txt, ignoring any commented-out lines.
-    requirements = [line for line in requirements_file.read().splitlines()
-                    if not line.startswith('#')]
-
-
-setup(
+setuptools.setup(
     name='weathergen',
-    version=versioneer.get_version(),
-    cmdclass=versioneer.get_cmdclass(),
+    version='2.0.1',
     description="Generates weather",
-    long_description=readme,
+    long_description=long_description,
     author="Thomas Morris",
     author_email='thomasmorris@princeton.edu',
-    url='https://github.com/tomachito/weathergen',
-    python_requires='>={}'.format('.'.join(str(n) for n in min_version)),
-    packages=find_packages(exclude=['docs', 'tests']),
-    entry_points={
-        'console_scripts': [
-            # 'command = some.module:some_function',
-        ],
-    },
+    url='https://github.com/thomaswmorris/weathergen',
+    python_requires='>=3.6',
+    packages=setuptools.find_packages(exclude=['docs', 'tests']),
     include_package_data=True,
     package_data={
         'weathergen': [
@@ -57,7 +23,7 @@ setup(
             # 'path/to/data_file',
         ]
     },
-    install_requires=requirements,
+    install_requires=['numpy', 'datetime'],
     license="BSD (3-clause)",
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
