@@ -1,17 +1,26 @@
-,site,lat,lon,alt
-0,armazones,-24.59,-70.192,3046
-1,cambridge_ma,42.374,-71.111,8
-2,cambridge_uk,52.17,0.059,11
-3,chajnantor,-22.946,-67.777,5107
-4,green_bank,38.43,-79.84,807
-5,kolkata,22.579,88.361,6
-6,mauna_kea,19.823,-155.475,4205
-7,mount_graham,32.702,-109.89,3178
-8,munich,48.135,11.582,520
-9,narrabri,-30.313,149.565,237
-10,owens_valley,37.232,-118.295,1222
-11,princeton,40.344,-74.661,203
-12,socorro,34.1,-107.6,2120
-13,south_pole,-89.0,0.0,2800
-14,tenerife,28.3,-16.51,2390
-15,tibet,32.33,80.03,5176
+,tag,name,country,lat,lon,alt
+0,armazones,"Cerro Armazones, Chile",chile,-24.59,-70.192,3046
+1,cambridge,"Cambridge, Massachusetts",usa,42.374,-71.111,8
+2,chajnantor,"Llano de Chajnantor, Chile",chile,-22.946,-67.777,5107
+3,effelsberg,"Effelsberg, Germany",germany,50.524,6.883,1047
+4,graham,"Mount Graham, Arizona",usa,32.702,-109.89,3178
+5,green_bank,"Green Bank, West Virginia", usa,38.43,-79.84,807
+6,lagos,"Lagos, Nigeria",nigeria,6.455,3.384,41
+7,mauna_kea,"Mauna Kea, Hawaii",usa,19.823,-155.475,4205
+8,mumbai,"Mumbai, India",india,19.076,72.878,14
+9,murchison,"Murchison, Western Australia",australia,-26.703,116.671,395
+10,narrabri,"Narrabri, New South Wales",australia,-30.313,149.55,237
+11,ngari,"Ngari, Tibet",china,32.33,80.03,5176
+12,nobeyama,"Nobeyama Observatory, Nagano",japan,35.942,138.476,1350
+13,north_cape,"Northern Cape, South Africa",south_africa,-30.721,21.411,1075
+14,owens,"Owens Valley, California",usa,37.232,-118.295,1222
+15,pachon,"Cerro Pachón, Chile",chile,-30.245,-70.749,2663
+16,princeton,"Princeton, New Jersey",usa,40.344,-74.661,62
+17,qitai,"Qitai, Xinjiang",china,43.601,89.682,1780
+18,singapore,Singapore,singapore,1.374,103.801,65
+19,socorro,"Socorro, New Mexico",usa,34.1,-107.6,2120
+20,south_pole,South Pole,antarctica,-89.0,0.0,2800
+21,summit,"Summit Station, Greenland",denmark,72.579,-38.46,3126
+22,teide,"Mount Teide, Tenerife",spain,28.3,-16.51,2390
+23,valletta,"Valletta, Malta",malta,35.898,14.512,56
+24,vancouver,"Vancouver, British Columbia",canada,49.261,-123.114,15
