@@ -1,4 +1,4 @@
-## Overview
+# Overview
 
 ```weathergen``` generates a time-varying vertical profile of weather parameters, specifiying the temperature, pressure, cloud coverage, and wind vector for a set of heights above the ground. 
 
