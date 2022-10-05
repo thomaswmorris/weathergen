@@ -1,7 +1,7 @@
 Weathergen
 ==========
 
-```weathergen``` simulates a time-varying vertical profile of weather parameters. 
+``weathergen`` simulates a time-varying vertical profile of weather parameters. 
 
 Usage
 -----
