@@ -8,17 +8,22 @@ Usage
 
 After importing the package, simply pass a site and an array of times to the ```generate``` function. To simulate weather for the Chajnantor Plateau between June 1st and September 1st at a resolution of a minute, for example, we would write 
 
+.. code-block:: python
+   :linenos:
+
+  import numpy as np
+  from datetime import datetime
+  import weathergen
+
+  t0 = datetime(2022,6,1).timestamp()
+  t1 = datetime(2022,9,1).timestamp()
+
+  gen_times = np.arange(t0, t1, 600)
+
+  weather = weathergen.generate(site='chajnantor', time=gen_times)
+
 ```
-import numpy as np
-from datetime import datetime
-import weathergen
 
-t0 = datetime(2022,6,1).timestamp()
-t1 = datetime(2022,9,1).timestamp()
-
-gen_times = np.arange(t0, t1, 600)
-
-weather = weathergen.generate(site='chajnantor', t=gen_times)
 ```
 Note that the supplied year is arbitrary; the underlying model considers only annual and diurnal climatological variations. The supported sites are listed below, and are also stored in ```weathergen.sites```. Specified times should be supplied in Unix time.
 
