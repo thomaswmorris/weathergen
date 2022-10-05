@@ -5,7 +5,17 @@ Weathergen
 
 Usage
 -----
+.. code-block:: python
+   :linenos:
+   :emphasize-lines: 3,5-6
 
+   def some_function():
+       interesting = False
+       print 'This line is highlighted.'
+       print 'This one is not...'
+       print '...but this one is.'
+       print 'This one is highlighted too.'
+       
 After importing the package, simply pass a site and an array of times to the ```generate``` function. To simulate weather for the Chajnantor Plateau between June 1st and September 1st at a resolution of a minute, for example, we would write 
 
 .. code-block:: python
