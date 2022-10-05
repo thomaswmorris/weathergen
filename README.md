@@ -19,7 +19,7 @@ gen_times = np.arange(t0, t1, 600)
 weather = weathergen.generate(site='chajnantor', t=gen_times)
 ```
 
-The supported sites are listed below, and can also be accessed ```weathergen.sites```. Specified times should be supplied in Unix time.
+The supported sites are listed below, and are also stored in ```weathergen.sites```. Specified times should be supplied in Unix time.
 
 ## Methodology
 
