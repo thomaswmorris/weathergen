@@ -1,8 +1,10 @@
-# Overview
+Weathergen
+==========
 
 ```weathergen``` simulates a time-varying vertical profile of weather parameters. 
 
-## Usage
+Usage
+-----
 
 After importing the package, simply pass a site and an array of times to the ```generate``` function. To simulate weather for the Chajnantor Plateau between June 1st and September 1st at a resolution of a minute, for example, we would write 
 
@@ -22,11 +24,13 @@ Note that the supplied year is arbitrary; the underlying model considers only an
 
 The ```weather``` object is a dict whose elements contain the generated weather parameters. The values are typically two-dimensional with shape ```(n_times, n_layers)```, where ```weather.time``` and ```weather.height``` describe the time and height of each dimension, in Unix time and meters above sea level. Some parameters like ```weather.pwv``` and ```weather.cloud_cover``` are described by a single number for each time and do not have a layer dimension. 
 
-## Methodology
+Methodology
+-----------
 
 See paper. 
 
-## Sites
+Sites
+-----
 
 Supported sites are shown below. Sites are chosen for the presence of astronomical observatories, or because I think that they're climatologically interesting.
 
