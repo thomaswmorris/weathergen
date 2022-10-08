@@ -39,8 +39,12 @@ Weathergen
 
 Usage
 -----
+
+.. code-block:: bash
+    
+    pip install weathergen
        
-After importing the package, simply pass a site and an array of times to the ```generate``` function. To simulate weather for Princeton, New Jersey between June 1st and September 1st at a resolution of a minute, for example, we would write 
+Import the package and pass a site and an array of times to the ```generate``` function. To simulate weather for Princeton, New Jersey between June 1st and September 1st at a resolution of a minute, for example, we would write 
 
 .. code-block:: python
 
