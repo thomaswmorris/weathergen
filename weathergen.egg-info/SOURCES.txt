@@ -1,6 +1,6 @@
 LICENSE
 MANIFEST.in
-README.md
+README.rst
 setup.py
 weathergen/__init__.py
 weathergen/sites.csv

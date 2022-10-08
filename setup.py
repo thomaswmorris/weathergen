@@ -1,12 +1,12 @@
 
 import setuptools
 
-with open("README.md", "r") as fh:
+with open('README.rst', 'r') as fh:
     long_description = fh.read()
 
 setuptools.setup(
     name='weathergen',
-    version='2.0.5',
+    version='2.0.7',
     description="Generates weather",
     long_description=long_description,
     author="Thomas Morris",
