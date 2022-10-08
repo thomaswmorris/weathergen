@@ -87,4 +87,10 @@ Supported sites are shown below. Sites are chosen for the presence of astronomic
      - latitude (°N)
      - longitude (°E)
      - altitude (masl)
-
+   * - tag
+     - description
+     - country
+     - notes
+     - latitude (°N)
+     - longitude (°E)
+     - altitude (masl)
