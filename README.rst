@@ -4,7 +4,7 @@ Weathergen
 ``weathergen`` generates time-varying weather parameters. 
 
 .. list-table:: Title
-   :widths: 25 25 50
+   :widths: 25 25 50 25
    :header-rows: 1
 
    * - Parameter
