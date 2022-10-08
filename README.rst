@@ -77,7 +77,7 @@ Sites
 Supported sites are shown below. Sites are chosen for the presence of astronomical observatories, or because I think that they're climatologically interesting.
 
 .. list-table:: sites
-   :widths: 25 25 50 25
+   :widths: 25 25 50 25 25 25 25
    :header-rows: 1
 
    * - tag
