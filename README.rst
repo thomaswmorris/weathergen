@@ -3,7 +3,7 @@ Weathergen
 
 ``weathergen`` generates time-varying weather parameters. 
 
-.. list-table:: Title
+.. list-table:: Single-level parameters
    :widths: 25 25 50 25
    :header-rows: 1
 
@@ -14,11 +14,28 @@ Weathergen
    * - Total column water vapor
      - total_water_vapor
      - The total amount of water vapor 
-     - millimeters
+     - mm
    * - Total cloud cover
      - total_cloud_cover
      - The proportion of sky covered by clouds 
      - [none]
+     
+.. list-table:: Multi-level parameters
+   :widths: 25 25 50 25
+   :header-rows: 1
+
+   * - Parameter
+     - Tag
+     - Description
+     - Units
+   * - Air temperature 
+     - air_temp
+     - The temperature of the air 
+     - K
+   * - Air pressure
+     - pressure
+     - The air pressure
+     - hPa
 
 Usage
 -----
