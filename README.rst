@@ -14,11 +14,11 @@ Weathergen
    * - Total column water vapor
      - total_water_vapor
      - The total amount of water vapor 
-     - :math:`\mu`m
-   * - Row 2, column 1
-     - Row 2, column 2
-     - Row 2, column 3
-     - 
+     - millimeters
+   * - Total cloud cover
+     - total_cloud_cover
+     - The proportion of sky covered by clouds 
+     - [none]
 
 Usage
 -----
