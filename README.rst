@@ -69,7 +69,7 @@ Install the package using pip:
     
     pip install weathergen
        
-In Python, import the package and pass a site and an array of times to the ```generate``` function. For example, to simulate weather for Princeton, New Jersey between June 1st and September 1st at a resolution of a minute we would write 
+In Python, import the package and pass a site and an array of times to the ``generate`` function. For example, to simulate weather for Princeton, New Jersey between June 1st and September 1st at a resolution of a minute we would write 
 
 .. code-block:: python
 
