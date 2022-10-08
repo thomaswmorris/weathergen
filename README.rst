@@ -4,42 +4,47 @@ Weathergen
 ``weathergen`` generates time-varying weather parameters. 
 
 .. list-table:: Single-level parameters
-   :widths: 25 25 50 25
+   :widths: 25 50 25
    :header-rows: 1
 
-   * - Parameter
-     - Tag
-     - Description
-     - Units
-   * - Total column water vapor
-     - total_water_vapor
+   * - tag
+     - parameter
+     - units
+   * - total_water_vapor
      - The total amount of water vapor 
      - mm
-   * - Total cloud cover
-     - total_cloud_cover
+   * - total_cloud_cover
      - The proportion of sky covered by clouds 
      - [none]
-   * - Precipitation rate
-     - total_precipitation
+   * - total_precipitation
      - The rate of precipitation
      - mm/hr
      
 .. list-table:: Multi-level parameters
-   :widths: 25 25 50 25
+   :widths: 25 50 25
    :header-rows: 1
 
-   * - Parameter
-     - Tag
-     - Description
-     - Units
-   * - Air temperature 
-     - air_temp
-     - The temperature of the air 
+   * - tag
+     - parameter
+     - units
+   * - air_temp
+     - Ambient air temperature 
      - K
-   * - Air pressure
-     - pressure
-     - The air pressure
+   * - pressure
+     - Air pressure
      - hPa
+   * - wind_north
+     - Mean northward wind vector
+     - m/s
+   * - wind_east
+     - Mean eastward wind vector
+     - m/s
+   * - divergence
+     - Divergence
+     - 1/s
+   * - vorticity
+     - Potential vorticity
+     - 1/s
 
 Usage
 -----
