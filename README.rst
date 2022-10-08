@@ -46,7 +46,7 @@ Install the package using pip:
     
     pip install weathergen
        
-In Python, import the package and pass a site and an array of times to the ```generate``` function. To simulate weather for Princeton, New Jersey between June 1st and September 1st at a resolution of a minute, for example, we would write 
+In Python, import the package and pass a site and an array of times to the ```generate``` function. For example, to simulate weather for Princeton, New Jersey between June 1st and September 1st at a resolution of a minute we would write 
 
 .. code-block:: python
 
@@ -57,7 +57,7 @@ In Python, import the package and pass a site and an array of times to the ```ge
     t0 = datetime(2022,6,1).timestamp()
     t1 = datetime(2022,9,1).timestamp()
 
-    gen_times = np.arange(t0, t1, 600)
+    gen_times = np.arange(t0, t1, 60)
 
     weather = weathergen.generate(site='princeton', time=gen_times)
 
