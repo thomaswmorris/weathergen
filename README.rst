@@ -6,6 +6,8 @@ Weathergen
 Parameters
 -----------
 
+``weathergen`` simulates the following weather parameters:
+
 .. list-table:: Single-level parameters
    :widths: 25 50 25
    :header-rows: 1
