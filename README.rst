@@ -92,7 +92,7 @@ The weather parameters are contained in the attributes of the ``weather`` object
 Sites
 -----
 
-Supported sites are shown below. Sites are chosen for the presence of astronomical observatories, or because they are climatological outliers (and thus a good test of my model). 
+Supported sites are shown below. Sites are chosen for the presence of major astronomical observatories, or because they are climatological outliers (and thus a good test of my model). 
 
 .. list-table:: sites
    :widths: 25 50 50 75 30 30 30
