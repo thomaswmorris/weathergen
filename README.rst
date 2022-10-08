@@ -40,6 +40,8 @@ Weathergen
 Usage
 -----
 
+Install the package as
+
 .. code-block:: bash
     
     pip install weathergen
