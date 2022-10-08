@@ -3,7 +3,7 @@ Weathergen
 
 .. csv-table:: Sites 
    :file: weathergen/sites.csv
-   :widths: 30, 70, 50, 50, 50, 50, 50
+   :widths: 30, 70, 50, 50, 50, 50, 50, 50
    :header-rows: 1
 
 ``weathergen`` generates time-varying weather parameters. 
