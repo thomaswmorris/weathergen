@@ -11,10 +11,10 @@ Weathergen
      - Tag
      - Description
      - Units
-   * - Row 1, column 1
-     -
-     - Row 1, column 3
-     - 
+   * - Total column water vapor
+     - total_water_vapor
+     - The total amount of water vapor 
+     - :math:`\mu`m
    * - Row 2, column 1
      - Row 2, column 2
      - Row 2, column 3
