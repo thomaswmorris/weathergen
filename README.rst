@@ -1,12 +1,26 @@
 Weathergen
 ==========
 
-``weathergen`` simulates a time-varying vertical profile of weather parameters. 
+``weathergen`` generates time-varying weather parameters. 
+
+.. list-table:: Title
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - Heading row 1, column 1
+     - Heading row 1, column 2
+     - Heading row 1, column 3
+   * - Row 1, column 1
+     -
+     - Row 1, column 3
+   * - Row 2, column 1
+     - Row 2, column 2
+     - Row 2, column 3
 
 Usage
 -----
        
-After importing the package, simply pass a site and an array of times to the ```generate``` function. To simulate weather for the Chajnantor Plateau between June 1st and September 1st at a resolution of a minute, for example, we would write 
+After importing the package, simply pass a site and an array of times to the ```generate``` function. To simulate weather for Princeton, New Jersey between June 1st and September 1st at a resolution of a minute, for example, we would write 
 
 .. code-block:: python
 
@@ -19,7 +33,7 @@ After importing the package, simply pass a site and an array of times to the ```
 
     gen_times = np.arange(t0, t1, 600)
 
-    weather = weathergen.generate(site='chajnantor', time=gen_times)
+    weather = weathergen.generate(site='princeton', time=gen_times)
 
 Note that the supplied year is arbitrary; the underlying model considers only annual and diurnal climatological variations. The supported sites are listed below, and are also stored in ``weathergen.sites``. Specified times should be supplied in Unix time.
 
