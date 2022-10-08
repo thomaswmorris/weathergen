@@ -5,7 +5,6 @@ Weathergen
 
 .. list-table:: Single-level parameters
    :widths: 25 25 50 25
-   fontSize: 10
    :header-rows: 1
 
    * - Parameter
