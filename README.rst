@@ -3,8 +3,6 @@ Weathergen
 
 ``weathergen`` generates time-varying weather parameters. 
 
-fontSize: 10
-
 .. list-table:: Single-level parameters
    :widths: 25 25 50 25
    fontSize: 10
@@ -77,4 +75,16 @@ Sites
 -----
 
 Supported sites are shown below. Sites are chosen for the presence of astronomical observatories, or because I think that they're climatologically interesting.
+
+.. list-table:: sites
+   :widths: 25 25 50 25
+   :header-rows: 1
+
+   * - tag
+     - description
+     - country
+     - notes
+     - latitude (°N)
+     - longitude (°E)
+     - altitude (masl)
 
