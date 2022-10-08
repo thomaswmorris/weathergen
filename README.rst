@@ -14,7 +14,7 @@ Weathergen
      - The total amount of water vapor 
      - mm
    * - total_cloud_cover
-     - The proportion of sky covered by clouds 
+     - The proportion of total column covered by clouds 
      - [none]
    * - total_precipitation
      - The rate of precipitation
@@ -39,6 +39,15 @@ Weathergen
    * - wind_east
      - Mean eastward wind vector
      - m/s
+   * - abs_hum
+     - Water vapor content of air
+     - kg/m3
+   * - ozone
+     - Ozone content of air 
+     - kg/m3
+   * - cloud_cover
+     - The proportion of the layer covered by clouds 
+     - [none]
    * - divergence
      - Divergence
      - 1/s
