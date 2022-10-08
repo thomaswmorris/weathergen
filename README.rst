@@ -1,7 +1,7 @@
 Weathergen
 ==========
 
-``weathergen`` generates time-varying weather profiles for different locations on Earth, allowing for the simulation frameworks like `maria <https://github.com/thomaswmorris/maria>`_ to simulate climatologically-accurate ground-based astronomical observations. 
+``weathergen`` generates time-varying weather profiles for different locations on Earth, allowing for the simulation frameworks like `maria <https://github.com/thomaswmorris/maria>`_ to simulate climatologically-accurate ground-based astronomical observations. But there are probably other reasons to simulate weather, too. 
 
 Parameters
 -----------
