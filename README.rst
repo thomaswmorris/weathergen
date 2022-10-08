@@ -19,6 +19,10 @@ Weathergen
      - total_cloud_cover
      - The proportion of sky covered by clouds 
      - [none]
+   * - Precipitation rate
+     - total_precipitation
+     - The rate of precipitation
+     - mm/hr
      
 .. list-table:: Multi-level parameters
    :widths: 25 25 50 25
