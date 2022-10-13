@@ -48,10 +48,10 @@ Parameters
      - Air pressure
      - hPa
    * - wind_north
-     - Mean northward wind vector
+     - Northward component of mean wind vector
      - m/s
    * - wind_east
-     - Mean eastward wind vector
+     - Eastward component mean wind vector
      - m/s
    * - abs_hum
      - Water vapor content of air
