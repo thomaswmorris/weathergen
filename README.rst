@@ -16,17 +16,17 @@ Parameters
      - parameter
      - units
    * - total_water_vapor
-     - The total amount of water vapor 
-     - mm
+     - Total water vapor in the atmospheric column.
+     - mm of liquid water equivalent
    * - total_liquid_water
-     - The total amount of column liquid water
-     - mm
+     - Total liquid water in the atmospheric column.
+     - mm of liquid water equivalent
    * - total_snow_water
-     - The total amount of column snow water
-     - mm
+     - Total snow water in the atmospheric column.
+     - mm of liquid water equivalent
    * - total_ice_water
-     - The total amount of column ice water
-     - mm
+     - Total ice water in the atmospheric column.
+     - mm of liquid water equivalent
    * - total_cloud_cover
      - The proportion of total column covered by clouds 
      - [none]
