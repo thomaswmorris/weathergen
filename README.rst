@@ -15,7 +15,16 @@ Parameters
    * - tag
      - parameter
      - units
-   * - total_water_vapor
+   * - total_column_water_vapor
+     - The total amount of water vapor 
+     - mm
+   * - total_column_liquid_water
+     - The total amount of water vapor 
+     - mm
+   * - total_column_snow_water
+     - The total amount of water vapor 
+     - mm
+   * - total_column_ice_water
      - The total amount of water vapor 
      - mm
    * - total_cloud_cover
