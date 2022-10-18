@@ -3,8 +3,15 @@ Weathergen
 
 ``weathergen`` generates time-varying weather profiles using a synthesis of in-situ observations and satellite reanalysis estimates of meteorological parameters, and is able to faithfully recreate weather patterns allowing for the simulation frameworks like `maria <https://github.com/thomaswmorris/maria>`_ to simulate climatologically-accurate ground-based astronomical observations.
 
-Parameters
+Methodology
 -----------
+
+``weathergen`` includes climatological data from myriad sources (which ones?). For each site, weather parameters are compiled and adjusted (e.g. for diurnal and annual trends). After orthogonalizing the atmospheric features, the fluctuations are orthogonalized as to assume each eigenmode as being stationary and statistically independent. We may then use their characteristic spectra to generate novel time series, which can be sent through the aforementioned process in reverse to yield simulated weather data. 
+
+The generated profiles depend on reanalysis data which are limited to a temporal resolution of an hour, but other means of adjustment are possible depending on the sophistication of the alternate sources of weather data. For example, fluctuations in total column water vapor (the largest driver of sub-millimeter atmospheric interference) is not stationary from hour to hour.
+
+Parameters
+----------
 
 ``weathergen`` simulates the following weather parameters:
 
