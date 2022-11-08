@@ -6,7 +6,7 @@ weathergen
 Methodology
 -----------
 
-``weathergen`` includes climatological data from `ERA5 <https://rmets.onlinelibrary.wiley.com/doi/10.1002/qj.3803>`_5, `GML <https://gml.noaa.gov/obop/>`_5, `ESO <https://www.eso.org/sci/facilities>`_5, and `Meteostat <https://meteostat.net/en/>`_5. For each site, weather parameters are compiled and adjusted (e.g. for diurnal and annual trends). 
+``weathergen`` includes climatological data from `ERA5 <https://rmets.onlinelibrary.wiley.com/doi/10.1002/qj.3803>`_, `GML <https://gml.noaa.gov/obop/>`_, `ESO <https://www.eso.org/sci/facilities>`_, and `Meteostat <https://meteostat.net/en/>`_. For each site, weather parameters are compiled and adjusted (e.g. for diurnal and annual trends). 
 
 After orthogonalizing the atmospheric features, the fluctuations are orthogonalized as to assume each eigenmode as being stationary and statistically independent. We may then use their characteristic spectra to generate novel time series, which can be sent through the aforementioned process in reverse to yield simulated weather data. 
 
