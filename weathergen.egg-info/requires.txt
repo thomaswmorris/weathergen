@@ -1,5 +1,0 @@
-numpy
-scipy
-pandas
-datetime
-h5py
