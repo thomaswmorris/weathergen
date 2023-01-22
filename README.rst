@@ -1,7 +1,7 @@
 weathergen
 ==========
 
-``weathergen`` generates time-varying weather profiles using a synthesis of in-situ observations and satellite reanalysis estimates of meteorological parameters, and is able to faithfully recreate weather patterns allowing for the simulation frameworks like `maria <https://github.com/thomaswmorris/maria>`_ to simulate climatologically-accurate ground-based astronomical observations.
+``weathergen`` generates time-varying weather profiles using a synthesis of in-situ observations and satellite reanalysis estimates of meteorological parameters, and is able to recreate weather patterns allowing for the simulation frameworks like `maria <https://github.com/thomaswmorris/maria>`_ to simulate climatologically-accurate ground-based astronomical observations.
 
 Methodology
 -----------
