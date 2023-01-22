@@ -20,8 +20,9 @@ Install the package using pip:
 .. code-block:: bash
     
     pip install weathergen
-       
-In Python, import the package and pass a site and an array of times to the ``generate`` function. For example, to simulate weather for Princeton, New Jersey between June 1st and September 1st at a resolution of a minute we would write 
+    
+In Python, import the package and pass a site and an array of times to the ```generate``` function. For example, to simulate hourly weather for Princeton, New Jersey between June 1st and September 1st we would write 
+=======
 
 .. code-block:: python
 
@@ -29,38 +30,23 @@ In Python, import the package and pass a site and an array of times to the ``gen
     from datetime import datetime
     import weathergen
 
-    t0 = datetime(2022,6,1).timestamp()
-    t1 = datetime(2022,9,1).timestamp()
+    t0 = datetime(2022,6,1).timestamp() # June 1, 2022
+    t1 = datetime(2022,9,1).timestamp() # August 1, 2022
 
-    gen_times = np.arange(t0, t1, 60)
+    gen_times = np.arange(t0, t1, 3600) # three months of hourly data
 
     weather = weathergen.generate(site='princeton', time=gen_times)
 
+All available sites are outlined in the dataframe ``weathergen.sites``. Note that the supplied year is arbitrary; the underlying model considers only annual and diurnal climatological variations. The supported sites are listed below, and are also stored in ``weathergen.sites``. Specified times should be supplied in Unix time.
+
+The weather parameters are contained in the attributes of the ``weather`` object, e.g. ``weather.temperature`` or ``weather.pressure``. The values are typically two-dimensional with shape ``(n_height, n_time)``, where ``weather.height`` and ``weather.time`` describe the time and height of each dimension, in Unix time and meters above sea level. Single-level parameters are described by a single number for each time and do not have a height dimension. 
+    
+Methodology
+-----------
+
+See paper. 
+
+=======
 Note that the supplied year is arbitrary: the underlying model considers only annual and diurnal climatological variations. The supported sites are listed below, and are also stored in ``weathergen.sites``. Specified times should be supplied in Unix time.
 
 The weather parameters are contained in the attributes of the ``weather`` object, e.g. ``weather.air_temp`` or ``weather.pressure``. The values are typically two-dimensional with shape ``(n_times, n_heights)``, where ``weather.time`` and ``weather.height`` describe the time and height of each dimension, in Unix time and meters above sea level. Single-level parameters are described by a single number for each time and do not have a layer dimension. 
-
-
-Sites
------
-
-Supported sites are outlined below. Sites are included for the presence of major astronomical observatories, because they are climatological outliers with weird weather (and thus a good test of my model), or because they are cities that I like. 
-
-.. list-table:: sites
-   :widths: 25 50 50 75 30 30 30
-   :header-rows: 1
-
-   * - tag
-     - description
-     - country
-     - notes
-     - latitude (°N)
-     - longitude (°E)
-     - altitude (masl)
-   * - tag
-     - description
-     - country
-     - notes
-     - latitude (°N)
-     - longitude (°E)
-     - altitude (masl)

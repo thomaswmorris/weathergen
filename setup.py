@@ -6,7 +6,7 @@ with open('README.rst', 'r') as fh:
 
 setuptools.setup(
     name='weathergen',
-    version='2.0.7',
+    version='2.1.2',
     description="Generates weather",
     long_description=long_description,
     author="Thomas Morris",
