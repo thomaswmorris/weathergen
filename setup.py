@@ -6,7 +6,7 @@ with open('README.rst', 'r') as fh:
 
 setuptools.setup(
     name='weathergen',
-    version='2.1.3',
+    version='2.1.4',
     description="Generates time-varying weather profiles using a synthesis of in-situ observations and satellite reanalysis estimates of meteorological parameters.",
     long_description=long_description,
     author="Thomas Morris",
@@ -16,11 +16,7 @@ setuptools.setup(
     packages=setuptools.find_packages(exclude=['docs', 'tests']),
     include_package_data=True,
     package_data={
-        'weathergen': [
-            # When adding files here, remember to update MANIFEST.in as well,
-            # or else they will not be included in the distribution on PyPI!
-            # 'path/to/data_file',
-        ]
+        'weathergen': []
     },
     install_requires=['numpy', 'scipy', 'pandas', 'datetime', 'h5py'],
     license="BSD (3-clause)",
