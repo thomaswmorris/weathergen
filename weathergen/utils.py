@@ -1,23 +1,14 @@
+import os, pytz
 import numpy as np
-import scipy as sp
-import pandas as pd
-import h5py, glob, os, pytz, time
 from datetime import datetime
 
-RGI = sp.interpolate.RegularGridInterpolator
-
 base, this_filename = os.path.split(__file__)
-#base = '/users/tom/desktop/repos/weathergen/weathergen'
 
-VectorRBS = lambda xi, yi, zi, x, y, kx, ky : np.concatenate([sp.interpolate.RectBivariateSpline(xi, 
-                                                                                                yi, 
-                                                                                                zi[:,:,i], 
-                                                                                                kx=kx, 
-                                                                                                ky=ky)(x, y, grid=False)[:,None] for i in range(zi.shape[-1])], axis=1)
+def scale_invariant_spectrum(k,a,b,c,d):
+    return a*(1+np.power(b*k+1e-16,2))**-c+d
 
-
-def get_scale_invariant_spectrum(k,a,b,c,d,e):
-    return a*(1+np.power(k/b+1e-100,2))**-(c+d*np.log(k))+e
+def log_scale_invariant_spectrum(k, *args):
+    return np.log(scale_invariant_spectrum(k, *args))
             
 def get_utc_day_hour(t):
     dt = datetime.fromtimestamp(t, tz=pytz.utc).replace(tzinfo=pytz.utc)
@@ -48,9 +39,8 @@ def get_relative_humidity(air_temp, dew_point):
     a, b, c = 611.21, 17.67, 238.88
     return 1e2 * np.exp(b*DP/(c+DP)-b*T/(c+T))
 
-def RH_to_AH(air_temp, rel_hum):
+def relative_to_absolute_humidity(air_temp, rel_hum):
     return 1e-2 * rel_hum * get_saturation_pressure(air_temp) / (461.5 * air_temp)
 
-def AH_to_RH(air_temp, abs_hum):
+def absolute_to_relative_humidity(air_temp, abs_hum):
     return 1e2 * 461.5 * air_temp * abs_hum / get_saturation_pressure(air_temp) 
-

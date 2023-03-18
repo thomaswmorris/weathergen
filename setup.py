@@ -6,7 +6,7 @@ with open('README.rst', 'r') as fh:
 
 setuptools.setup(
     name='weathergen',
-    version='2.1.4',
+    version='2.2.2',
     description="Generates time-varying weather profiles using a synthesis of in-situ observations and satellite reanalysis estimates of meteorological parameters.",
     long_description=long_description,
     author="Thomas Morris",
