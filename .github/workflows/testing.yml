@@ -19,7 +19,9 @@ jobs:
 
       - name: Install dependencies with pip
         run: |
-          pip install .
+          pip install --upgrade pip wheel
+          pip install -v .
+          pip list
 
       - name: Test the code
         run: |
