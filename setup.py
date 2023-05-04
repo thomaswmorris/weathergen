@@ -12,7 +12,7 @@ with open(path.join(here, "requirements.txt")) as requirements_file:
 
 setuptools.setup(
     name='weathergen',
-    version='2.2.2',
+    version='2.3.0',
     description="Generates time-varying weather profiles using a synthesis of in-situ observations and satellite reanalysis estimates of meteorological parameters.",
     long_description=long_description,
     author="Thomas Morris",
